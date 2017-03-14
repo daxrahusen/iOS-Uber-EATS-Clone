@@ -1,0 +1,21 @@
+PODS:
+  - Hero (0.3.4)
+
+DEPENDENCIES:
+  - Hero (from `https://github.com/lkzhao/Hero.git`)
+
+EXTERNAL SOURCES:
+  Hero:
+    :git: https://github.com/lkzhao/Hero.git
+
+CHECKOUT OPTIONS:
+  Hero:
+    :commit: 2f1140342d94f97f5aa0bab30520f391a5c990d2
+    :git: https://github.com/lkzhao/Hero.git
+
+SPEC CHECKSUMS:
+  Hero: cc0200e88eccf68e7fc708a2a24e2f132fe025e9
+
+PODFILE CHECKSUM: 142ce5fbccbb88373e80e4077aa0e182433bd3b1
+
+COCOAPODS: 1.1.1
