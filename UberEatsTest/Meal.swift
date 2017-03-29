@@ -45,7 +45,7 @@ class Meal: NSObject {
             return _price
         }
         set {
-            _price = "€\(newValue)"
+            _price = "€\(newValue ?? "")"
         }
     }
     

@@ -16,6 +16,7 @@ class HeaderCell: UICollectionViewCell {
         sv.backgroundColor = .white
         sv.delegate = self
         sv.isPagingEnabled = true
+        sv.bounces = false
         sv.showsHorizontalScrollIndicator = false
         return sv
     }()

@@ -56,7 +56,6 @@ class ViewController: UIViewController {
             collectionView.rightAnchor.constraint(equalTo: view.rightAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
-        
     }
 }
 

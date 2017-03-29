@@ -116,9 +116,6 @@ class DetailRestaurantCell: UITableViewCell {
             priceMealLabel.text = meal.price
         }
     }
-    
-    
-    
 }
 
 

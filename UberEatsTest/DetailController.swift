@@ -81,7 +81,12 @@ class DetailController: UIViewController {
     let meals = Meal.getMeals()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+        
+        if navigationBar.isNavigationBarVisible == true {
+            return .default
+        } else {
+            return .lightContent
+        }
     }
     
     override func viewDidLoad() {
@@ -175,7 +180,7 @@ class DetailController: UIViewController {
     }
     
     private func animateHeaderButtons(scrollView: UIScrollView) {
-        
+
         backButton.alpha = (100 - scrollView.contentOffset.y) / 100
         shareButton.alpha = (100 - scrollView.contentOffset.y) / 100
     }
@@ -189,6 +194,10 @@ class DetailController: UIViewController {
                 navigationBar.isNavigationBarVisible = !navigationBar.isNavigationBarVisible
                 navigationBar.navTopConstraint?.constant = 0
                 
+                setNeedsStatusBarAppearanceUpdate()
+                
+                UINavigationBar.appearance().barStyle = .blackOpaque
+                
                 UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
                     self.view.layoutIfNeeded()
                 }, completion: nil)
@@ -200,6 +209,10 @@ class DetailController: UIViewController {
                 
                 navigationBar.isNavigationBarVisible = !navigationBar.isNavigationBarVisible
                 navigationBar.navTopConstraint?.constant = -64
+                
+                setNeedsStatusBarAppearanceUpdate()
+                
+                UINavigationBar.appearance().barStyle = .blackOpaque
                 
                 UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
                     self.view.layoutIfNeeded()
@@ -260,7 +273,6 @@ extension DetailController: UIGestureRecognizerDelegate {
             let velocity = pan.velocity(in: tableView)
             return fabs(velocity.y) > fabs(velocity.x)
         }
-        
         return true
     }
     
