@@ -37,7 +37,7 @@ class DetailController: UIViewController {
         tb.delegate = self
         tb.dataSource = self
         tb.register(DetailRestaurantCell.self, forCellReuseIdentifier: "cell")
-        tb.heroModifiers = [.translate(y: 100)]
+        tb.heroModifiers = [.translate(y: 500)]
         return tb
     }()
     
@@ -72,7 +72,7 @@ class DetailController: UIViewController {
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .black
-        button.heroModifiers = [.fade, .translate(x: 0, y: 100)]
+        button.heroModifiers = [.fade, .translate(x: 0, y: 500)]
         return button
     }()
     
@@ -196,8 +196,6 @@ class DetailController: UIViewController {
                 
                 setNeedsStatusBarAppearanceUpdate()
                 
-                UINavigationBar.appearance().barStyle = .blackOpaque
-                
                 UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
                     self.view.layoutIfNeeded()
                 }, completion: nil)
@@ -211,9 +209,7 @@ class DetailController: UIViewController {
                 navigationBar.navTopConstraint?.constant = -64
                 
                 setNeedsStatusBarAppearanceUpdate()
-                
-                UINavigationBar.appearance().barStyle = .blackOpaque
-                
+                                
                 UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
                     self.view.layoutIfNeeded()
                 }, completion: nil)
@@ -283,6 +279,10 @@ extension DetailController: NavigationBarDelegate {
     
     func dismissVC() {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    func showPaymentDetailVC() {
+        
     }
     
 }

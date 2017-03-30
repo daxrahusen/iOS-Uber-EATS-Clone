@@ -22,6 +22,7 @@
 		E981F0101E76BAF20069F917 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981F00F1E76BAF20069F917 /* Meal.swift */; };
 		E981F0121E7702700069F917 /* DetailTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981F0111E7702700069F917 /* DetailTableHeader.swift */; };
 		E988B7DD1E77FE9000F10FBA /* FabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988B7DC1E77FE9000F10FBA /* FabButton.swift */; };
+		E9A0CF261E8C420000B692D0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0CF251E8C420000B692D0 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E981F00F1E76BAF20069F917 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		E981F0111E7702700069F917 /* DetailTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableHeader.swift; sourceTree = "<group>"; };
 		E988B7DC1E77FE9000F10FBA /* FabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabButton.swift; sourceTree = "<group>"; };
+		E9A0CF251E8C420000B692D0 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				E981EFEA1E7584E20069F917 /* ViewController.swift */,
 				E981F0051E75B9D80069F917 /* DetailController.swift */,
+				E9A0CF251E8C420000B692D0 /* TabBarController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E981F0101E76BAF20069F917 /* Meal.swift in Sources */,
+				E9A0CF261E8C420000B692D0 /* TabBarController.swift in Sources */,
 				E981EFFB1E75872C0069F917 /* RestaurentCell.swift in Sources */,
 				E981F0011E758DAD0069F917 /* HeaderCell.swift in Sources */,
 				E981F00E1E76A7B50069F917 /* DetailRestaurantCell.swift in Sources */,

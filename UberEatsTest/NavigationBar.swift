@@ -11,6 +11,7 @@ import ImageIO
 
 protocol NavigationBarDelegate: class {
     func dismissVC()
+    func showPaymentDetailVC()
 }
 
 class NavigationBar: UIView {
@@ -20,6 +21,7 @@ class NavigationBar: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(titleLabelClicked)))
         return label
     }()
     
@@ -103,6 +105,9 @@ class NavigationBar: UIView {
         titleLabel.attributedText = startString
     }
     
+    func titleLabelClicked() {
+        delegate?.showPaymentDetailVC()
+    }
     
     func backButtonClicked() {
         delegate?.dismissVC()
