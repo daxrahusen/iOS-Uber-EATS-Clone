@@ -281,10 +281,7 @@ extension DetailController: NavigationBarDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
-    func showPaymentDetailVC() {
-        
-    }
-    
+    func showPaymentDetailVC() { return }
 }
 
 

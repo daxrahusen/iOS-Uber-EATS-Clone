@@ -11,9 +11,10 @@ import Hero
 
 class ViewController: UIViewController {
     
-    let navigationBar: NavigationBar = {
+    lazy var navigationBar: NavigationBar = {
         let view = NavigationBar()
         view.set(startText: "PRE ORDER ", withImage: #imageLiteral(resourceName: "Arrow"), and: " Nes 97")
+        view.delegate = self
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
         return view
@@ -106,6 +107,15 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 190)
+    }
+}
+
+extension ViewController: NavigationBarDelegate {
+    
+    func dismissVC() { return }
+    
+    func showPaymentDetailVC() {
+        print(12345)
     }
     
 }

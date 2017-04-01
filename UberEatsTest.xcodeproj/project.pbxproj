@@ -21,8 +21,19 @@
 		E981F00E1E76A7B50069F917 /* DetailRestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981F00D1E76A7B50069F917 /* DetailRestaurantCell.swift */; };
 		E981F0101E76BAF20069F917 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981F00F1E76BAF20069F917 /* Meal.swift */; };
 		E981F0121E7702700069F917 /* DetailTableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981F0111E7702700069F917 /* DetailTableHeader.swift */; };
+		E982F3501E8D308600A72A21 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E982F34F1E8D308600A72A21 /* SearchController.swift */; };
+		E982F3521E8D331F00A72A21 /* ImageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E982F3511E8D331F00A72A21 /* ImageTextField.swift */; };
+		E982F3541E8D7D8C00A72A21 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E982F3531E8D7D8C00A72A21 /* Category.swift */; };
+		E982F3561E8D7F8100A72A21 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E982F3551E8D7F8100A72A21 /* CategoryCell.swift */; };
+		E982F3591E8D85B200A72A21 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E982F3581E8D85B200A72A21 /* ProfileController.swift */; };
+		E982F35B1E8E41EE00A72A21 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E982F35A1E8E41EE00A72A21 /* ProfileHeader.swift */; };
 		E988B7DD1E77FE9000F10FBA /* FabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E988B7DC1E77FE9000F10FBA /* FabButton.swift */; };
 		E9A0CF261E8C420000B692D0 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A0CF251E8C420000B692D0 /* TabBarController.swift */; };
+		E9D18A521E8FC5A300B3AE56 /* BillingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D18A511E8FC5A300B3AE56 /* BillingController.swift */; };
+		E9D18A541E8FC6DF00B3AE56 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D18A531E8FC6DF00B3AE56 /* PagingView.swift */; };
+		E9D18A561E8FCA6C00B3AE56 /* PagingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D18A551E8FCA6C00B3AE56 /* PagingCell.swift */; };
+		E9DDE18D1E8E430F0044EA17 /* ProfileSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDE18C1E8E430F0044EA17 /* ProfileSettingCell.swift */; };
+		E9DDE18F1E8E47460044EA17 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDE18E1E8E47460044EA17 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +55,19 @@
 		E981F00D1E76A7B50069F917 /* DetailRestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailRestaurantCell.swift; sourceTree = "<group>"; };
 		E981F00F1E76BAF20069F917 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		E981F0111E7702700069F917 /* DetailTableHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableHeader.swift; sourceTree = "<group>"; };
+		E982F34F1E8D308600A72A21 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		E982F3511E8D331F00A72A21 /* ImageTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTextField.swift; sourceTree = "<group>"; };
+		E982F3531E8D7D8C00A72A21 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E982F3551E8D7F8100A72A21 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		E982F3581E8D85B200A72A21 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		E982F35A1E8E41EE00A72A21 /* ProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		E988B7DC1E77FE9000F10FBA /* FabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FabButton.swift; sourceTree = "<group>"; };
 		E9A0CF251E8C420000B692D0 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E9D18A511E8FC5A300B3AE56 /* BillingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingController.swift; sourceTree = "<group>"; };
+		E9D18A531E8FC6DF00B3AE56 /* PagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		E9D18A551E8FCA6C00B3AE56 /* PagingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingCell.swift; sourceTree = "<group>"; };
+		E9DDE18C1E8E430F0044EA17 /* ProfileSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingCell.swift; sourceTree = "<group>"; };
+		E9DDE18E1E8E47460044EA17 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +135,11 @@
 		E981F0021E75A3950069F917 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E981EFEA1E7584E20069F917 /* ViewController.swift */,
-				E981F0051E75B9D80069F917 /* DetailController.swift */,
-				E9A0CF251E8C420000B692D0 /* TabBarController.swift */,
+				E982F34D1E8D305600A72A21 /* Home */,
+				E982F34E1E8D305E00A72A21 /* Search */,
+				E9D18A501E8FC57A00B3AE56 /* Billing */,
+				E982F3571E8D852300A72A21 /* Profile */,
+				E982F34C1E8D304700A72A21 /* Subclasses */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -127,7 +151,10 @@
 				E981EFFE1E7589E10069F917 /* NavigationBar.swift */,
 				E981F0111E7702700069F917 /* DetailTableHeader.swift */,
 				E981F0071E76012E0069F917 /* DetailHeader.swift */,
+				E9D18A531E8FC6DF00B3AE56 /* PagingView.swift */,
 				E988B7DC1E77FE9000F10FBA /* FabButton.swift */,
+				E982F35A1E8E41EE00A72A21 /* ProfileHeader.swift */,
+				E982F3511E8D331F00A72A21 /* ImageTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -136,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				E981F00F1E76BAF20069F917 /* Meal.swift */,
+				E982F3531E8D7D8C00A72A21 /* Category.swift */,
+				E9DDE18E1E8E47460044EA17 /* Settings.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -154,8 +183,52 @@
 				E981F0001E758DAD0069F917 /* HeaderCell.swift */,
 				E981EFFA1E75872C0069F917 /* RestaurentCell.swift */,
 				E981F00D1E76A7B50069F917 /* DetailRestaurantCell.swift */,
+				E982F3551E8D7F8100A72A21 /* CategoryCell.swift */,
+				E9DDE18C1E8E430F0044EA17 /* ProfileSettingCell.swift */,
+				E9D18A551E8FCA6C00B3AE56 /* PagingCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		E982F34C1E8D304700A72A21 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				E9A0CF251E8C420000B692D0 /* TabBarController.swift */,
+			);
+			name = Subclasses;
+			sourceTree = "<group>";
+		};
+		E982F34D1E8D305600A72A21 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E981EFEA1E7584E20069F917 /* ViewController.swift */,
+				E981F0051E75B9D80069F917 /* DetailController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		E982F34E1E8D305E00A72A21 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E982F34F1E8D308600A72A21 /* SearchController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		E982F3571E8D852300A72A21 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E982F3581E8D85B200A72A21 /* ProfileController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		E9D18A501E8FC57A00B3AE56 /* Billing */ = {
+			isa = PBXGroup;
+			children = (
+				E9D18A511E8FC5A300B3AE56 /* BillingController.swift */,
+			);
+			name = Billing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +261,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Dax;
 				TargetAttributes = {
 					E981EFE41E7584E20069F917 = {
@@ -281,17 +354,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E982F3561E8D7F8100A72A21 /* CategoryCell.swift in Sources */,
+				E9D18A561E8FCA6C00B3AE56 /* PagingCell.swift in Sources */,
+				E982F35B1E8E41EE00A72A21 /* ProfileHeader.swift in Sources */,
 				E981F0101E76BAF20069F917 /* Meal.swift in Sources */,
 				E9A0CF261E8C420000B692D0 /* TabBarController.swift in Sources */,
 				E981EFFB1E75872C0069F917 /* RestaurentCell.swift in Sources */,
+				E982F3501E8D308600A72A21 /* SearchController.swift in Sources */,
+				E982F3591E8D85B200A72A21 /* ProfileController.swift in Sources */,
+				E982F3521E8D331F00A72A21 /* ImageTextField.swift in Sources */,
 				E981F0011E758DAD0069F917 /* HeaderCell.swift in Sources */,
 				E981F00E1E76A7B50069F917 /* DetailRestaurantCell.swift in Sources */,
+				E9DDE18D1E8E430F0044EA17 /* ProfileSettingCell.swift in Sources */,
+				E982F3541E8D7D8C00A72A21 /* Category.swift in Sources */,
+				E9D18A541E8FC6DF00B3AE56 /* PagingView.swift in Sources */,
 				E981F0121E7702700069F917 /* DetailTableHeader.swift in Sources */,
 				E981EFEB1E7584E20069F917 /* ViewController.swift in Sources */,
 				E981F00B1E76931C0069F917 /* Extensions.swift in Sources */,
 				E988B7DD1E77FE9000F10FBA /* FabButton.swift in Sources */,
 				E981EFE91E7584E20069F917 /* AppDelegate.swift in Sources */,
 				E981F0081E76012E0069F917 /* DetailHeader.swift in Sources */,
+				E9DDE18F1E8E47460044EA17 /* Settings.swift in Sources */,
+				E9D18A521E8FC5A300B3AE56 /* BillingController.swift in Sources */,
 				E981F0061E75B9D80069F917 /* DetailController.swift in Sources */,
 				E981EFFF1E7589E10069F917 /* NavigationBar.swift in Sources */,
 			);

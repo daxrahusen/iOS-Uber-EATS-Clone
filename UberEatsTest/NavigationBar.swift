@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ImageIO
 
 protocol NavigationBarDelegate: class {
     func dismissVC()
@@ -21,7 +20,6 @@ class NavigationBar: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 16)
-        label.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(titleLabelClicked)))
         return label
     }()
     
