@@ -26,7 +26,7 @@ class PagingCell: UICollectionViewCell {
         addSubview(titleLabel)
         
         titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 10).isActive = true
         titleLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
         titleLabel.widthAnchor.constraint(equalToConstant: frame.width - 10).isActive = true
     }

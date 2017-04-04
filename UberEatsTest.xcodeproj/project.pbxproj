@@ -32,6 +32,8 @@
 		E9D18A521E8FC5A300B3AE56 /* BillingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D18A511E8FC5A300B3AE56 /* BillingController.swift */; };
 		E9D18A541E8FC6DF00B3AE56 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D18A531E8FC6DF00B3AE56 /* PagingView.swift */; };
 		E9D18A561E8FCA6C00B3AE56 /* PagingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D18A551E8FCA6C00B3AE56 /* PagingCell.swift */; };
+		E9D18A581E911F1000B3AE56 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D18A571E911F1000B3AE56 /* OrderCell.swift */; };
+		E9D18A5A1E91553700B3AE56 /* PreviousOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D18A591E91553700B3AE56 /* PreviousOrderCell.swift */; };
 		E9DDE18D1E8E430F0044EA17 /* ProfileSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDE18C1E8E430F0044EA17 /* ProfileSettingCell.swift */; };
 		E9DDE18F1E8E47460044EA17 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DDE18E1E8E47460044EA17 /* Settings.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		E9D18A511E8FC5A300B3AE56 /* BillingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingController.swift; sourceTree = "<group>"; };
 		E9D18A531E8FC6DF00B3AE56 /* PagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
 		E9D18A551E8FCA6C00B3AE56 /* PagingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingCell.swift; sourceTree = "<group>"; };
+		E9D18A571E911F1000B3AE56 /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		E9D18A591E91553700B3AE56 /* PreviousOrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousOrderCell.swift; sourceTree = "<group>"; };
 		E9DDE18C1E8E430F0044EA17 /* ProfileSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingCell.swift; sourceTree = "<group>"; };
 		E9DDE18E1E8E47460044EA17 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +190,8 @@
 				E982F3551E8D7F8100A72A21 /* CategoryCell.swift */,
 				E9DDE18C1E8E430F0044EA17 /* ProfileSettingCell.swift */,
 				E9D18A551E8FCA6C00B3AE56 /* PagingCell.swift */,
+				E9D18A571E911F1000B3AE56 /* OrderCell.swift */,
+				E9D18A591E91553700B3AE56 /* PreviousOrderCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -366,6 +372,7 @@
 				E981F0011E758DAD0069F917 /* HeaderCell.swift in Sources */,
 				E981F00E1E76A7B50069F917 /* DetailRestaurantCell.swift in Sources */,
 				E9DDE18D1E8E430F0044EA17 /* ProfileSettingCell.swift in Sources */,
+				E9D18A581E911F1000B3AE56 /* OrderCell.swift in Sources */,
 				E982F3541E8D7D8C00A72A21 /* Category.swift in Sources */,
 				E9D18A541E8FC6DF00B3AE56 /* PagingView.swift in Sources */,
 				E981F0121E7702700069F917 /* DetailTableHeader.swift in Sources */,
@@ -374,6 +381,7 @@
 				E988B7DD1E77FE9000F10FBA /* FabButton.swift in Sources */,
 				E981EFE91E7584E20069F917 /* AppDelegate.swift in Sources */,
 				E981F0081E76012E0069F917 /* DetailHeader.swift in Sources */,
+				E9D18A5A1E91553700B3AE56 /* PreviousOrderCell.swift in Sources */,
 				E9DDE18F1E8E47460044EA17 /* Settings.swift in Sources */,
 				E9D18A521E8FC5A300B3AE56 /* BillingController.swift in Sources */,
 				E981F0061E75B9D80069F917 /* DetailController.swift in Sources */,

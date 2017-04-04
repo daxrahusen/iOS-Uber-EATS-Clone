@@ -14,7 +14,7 @@ class ProfileHeader: UIView {
         let iv = UIImageView()
         iv.translatesAutoresizingMaskIntoConstraints = false
         iv.image = #imageLiteral(resourceName: "dummy")
-        iv.layer.cornerRadius = 15
+        iv.layer.cornerRadius = 20
         iv.layer.masksToBounds = true
         return iv
     }()

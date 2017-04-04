@@ -11,23 +11,11 @@ import UIKit
 class ProfileController: UITableViewController {
     
     var settings = Settings.getSettings()
-
-    let statusBarView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .white
-        return view
-    }()
     
+    var statusBarView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.addSubview(statusBarView)
-        
-        statusBarView.topAnchor.constraint(equalTo: view.topAnchor, constant: -20).isActive = true
-        statusBarView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        statusBarView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        statusBarView.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         let tableHeader = ProfileHeader(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 80))
         tableView.tableHeaderView = tableHeader
@@ -38,6 +26,29 @@ class ProfileController: UITableViewController {
         tableView.separatorStyle = .none
         tableView.backgroundColor = UIColor(red: 239/255.0, green: 239/255.0, blue: 244/255.0, alpha: 1)
         tableView.bounces = false
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setupStatusBarView()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        statusBarView.removeFromSuperview()
+    }
+    
+    private func setupStatusBarView() {
+        
+        statusBarView = UIView()
+        statusBarView.backgroundColor = .white
+        statusBarView.frame = CGRect(x: 0, y: 0, width: tableView.frame.width, height: 20)
+        
+        if let window = UIApplication.shared.delegate?.window {
+            window?.addSubview(statusBarView)
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

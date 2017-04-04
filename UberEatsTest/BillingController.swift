@@ -14,6 +14,11 @@ class BillingController: UIViewController {
         let pv = PagingView()
         pv.translatesAutoresizingMaskIntoConstraints = false
         pv.delegate = self
+        pv.layer.shadowColor = UIColor.black.cgColor
+        pv.layer.shadowOffset = CGSize(width: 0, height: 0)
+        pv.layer.shadowRadius = 5
+        pv.layer.shadowOpacity = 0.2
+        pv.layer.masksToBounds = false
         return pv
     }()
     
@@ -27,42 +32,45 @@ class BillingController: UIViewController {
         cv.backgroundColor = .white
         cv.dataSource = self
         cv.delegate = self
+        cv.register(PreviousOrderCell.self, forCellWithReuseIdentifier: "previousOrderId")
         cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "id")
+        cv.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
+        cv.scrollIndicatorInsets = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
         return cv
     }()
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .white
         
-        view.addSubview(pagingView)
         view.addSubview(collectionView)
+        view.addSubview(pagingView)
         
         NSLayoutConstraint.activate([
             
-            pagingView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20),
-            pagingView.leftAnchor.constraint(equalTo: view.leftAnchor),
-            pagingView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            pagingView.heightAnchor.constraint(equalToConstant: 44),
-            
-            collectionView.topAnchor.constraint(equalTo: pagingView.bottomAnchor),
+            collectionView.topAnchor.constraint(equalTo: view.topAnchor),
             collectionView.leftAnchor.constraint(equalTo: view.leftAnchor),
             collectionView.rightAnchor.constraint(equalTo: view.rightAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            pagingView.topAnchor.constraint(equalTo: view.topAnchor),
+            pagingView.leftAnchor.constraint(equalTo: view.leftAnchor),
+            pagingView.rightAnchor.constraint(equalTo: view.rightAnchor),
+            pagingView.heightAnchor.constraint(equalToConstant: 64)
             
         ])
     }
 }
 
-//MARK: - UICollectionViewDelegate
-extension BillingController: UICollectionViewDelegate {
+//MARK: - Extension
+extension BillingController {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         if !pagingView.selectorViewIsScrolling {
-        
+            
             let item = scrollView.contentOffset.x > 187.5 ? 1 : 0
             
             let indexPath = IndexPath(item: item, section: 0)
@@ -90,11 +98,14 @@ extension BillingController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "id", for: indexPath)
-        
-        cell.backgroundColor = .white
-        
-        return cell
+        if indexPath.row == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "previousOrderId", for: indexPath) as! PreviousOrderCell
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "id", for: indexPath)
+            cell.backgroundColor = .white
+            return cell
+        }
     }
 }
 
