@@ -14,10 +14,23 @@ extension UIView {
         
         let gradient: CAGradientLayer = CAGradientLayer()
         gradient.frame = self.frame
-        gradient.colors = [UIColor.black.withAlphaComponent(0.6).cgColor, UIColor.clear.cgColor]
+        gradient.colors = [UIColor.black.withAlphaComponent(0.4).cgColor, UIColor.clear.cgColor]
         gradient.locations = [0.0, 0.2]
         
         self.layer.insertSublayer(gradient, at: 1)
+    }
+    
+    func getGradienFrom(view: UIView) -> CAGradientLayer? {
+        
+        for layer in view.layer.sublayers! {
+            
+            if layer.isKind(of: CAGradientLayer.self) {
+                
+                return layer as! CAGradientLayer
+            }
+        }
+        
+        return nil
     }
 }
 

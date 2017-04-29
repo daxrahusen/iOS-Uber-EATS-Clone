@@ -66,6 +66,7 @@ class ProfileController: UITableViewController {
             return 1
         default:
             assert(false, "Something went totaly wrong...")
+            return 1
         }
     }
 
@@ -79,7 +80,6 @@ class ProfileController: UITableViewController {
             cell.selectionStyle = .none
             return cell
         case 1:
-            
             let cell = tableView.dequeueReusableCell(withIdentifier: "id", for: indexPath)
             cell.backgroundColor = UIColor(red: 92/255.0, green: 197/255.0, blue: 94/255.0, alpha: 0.5)
             cell.selectionStyle = .none
@@ -92,6 +92,7 @@ class ProfileController: UITableViewController {
             cell.selectionStyle = .none
             return cell
         default:
+            assert(false, "Something went totaly wrong...")
             break
         }
         
@@ -118,6 +119,7 @@ class ProfileController: UITableViewController {
         case 2:
             return 40
         default:
+            assert(false, "Something went totaly wrong...")
             break
         }
         

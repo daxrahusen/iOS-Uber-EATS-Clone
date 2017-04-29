@@ -145,9 +145,11 @@ extension SearchController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        if scrollView.contentOffset.y >= 0 {
+        if scrollView.contentOffset.y >= 0 && scrollView.contentOffset.y < 60 {
             
-            textFieldHeightConstant?.constant = 150 - scrollView.contentOffset.y
+            print(scrollView.contentOffset.y)
+            
+            textFieldHeightConstant?.constant = 100 - scrollView.contentOffset.y
             
             self.view.layoutIfNeeded()
         }

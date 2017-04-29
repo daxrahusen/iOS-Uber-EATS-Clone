@@ -29,11 +29,11 @@ class BillingController: UIViewController {
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.isPagingEnabled = true
         cv.showsHorizontalScrollIndicator = false
-        cv.backgroundColor = .white
+        cv.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 233/255, alpha: 1)
         cv.dataSource = self
         cv.delegate = self
         cv.register(PreviousOrderCell.self, forCellWithReuseIdentifier: "previousOrderId")
-        cv.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "id")
+        cv.register(SavedMealCell.self, forCellWithReuseIdentifier: "savedOrderId")
         cv.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
         cv.scrollIndicatorInsets = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
         return cv
@@ -102,8 +102,8 @@ extension BillingController: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "previousOrderId", for: indexPath) as! PreviousOrderCell
             return cell
         } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "id", for: indexPath)
-            cell.backgroundColor = .white
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "savedOrderId", for: indexPath) as! SavedMealCell
+            cell.delegate = self
             return cell
         }
     }
@@ -140,5 +140,13 @@ extension BillingController: PagingViewDelegate {
         } else {
             collectionView.scrollToItem(at: indexPath, at: .right, animated: true)
         }
+    }
+}
+
+//MARK: - SavedMealDelegate
+extension BillingController: SavedMealDelegate {
+    
+    func showHomeVC() {
+        tabBarController?.selectedIndex = 0
     }
 }

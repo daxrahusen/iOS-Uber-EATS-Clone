@@ -150,7 +150,7 @@ class DetailController: UIViewController {
     }
     
     func handlePan(gestureRecognizer: UIPanGestureRecognizer) {
-        
+
         let distance = panGesture.translation(in: view)
         
         if tableView.contentOffset.y == 0.0 {
@@ -223,6 +223,11 @@ extension DetailController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let mealVC = MealController()
+        mealVC.navigationBar.titleLabel.text = meals[indexPath.row].title
+        
+        show(mealVC, sender: nil)
     }
 }
 
@@ -269,6 +274,7 @@ extension DetailController: UIGestureRecognizerDelegate {
             let velocity = pan.velocity(in: tableView)
             return fabs(velocity.y) > fabs(velocity.x)
         }
+        
         return true
     }
     

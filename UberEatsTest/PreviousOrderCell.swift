@@ -16,6 +16,7 @@ class PreviousOrderCell: UICollectionViewCell {
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 233/255, alpha: 1)
+        cv.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 44, right: 0)
         cv.dataSource = self
         cv.delegate = self
         cv.register(OrderCell.self, forCellWithReuseIdentifier: "id")

@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		436E04D2EE8F60BF75BAFC6D /* Pods_UberEatsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA84467776AD77D61B34D7F /* Pods_UberEatsTest.framework */; };
+		E94275C41E9902C100044A7A /* SavedMealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E94275C31E9902C100044A7A /* SavedMealCell.swift */; };
+		E9737D4D1EAA44410025338D /* TypeFoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9737D4C1EAA44410025338D /* TypeFoodCell.swift */; };
+		E9737D4F1EAA8B9C0025338D /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9737D4E1EAA8B9C0025338D /* RadioButton.swift */; };
+		E9737D511EAD42380025338D /* IntructionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9737D501EAD42380025338D /* IntructionsCell.swift */; };
+		E9737D531EAD45A70025338D /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9737D521EAD45A70025338D /* StepperView.swift */; };
+		E97478771E93E54000E3D514 /* MealController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97478761E93E54000E3D514 /* MealController.swift */; };
+		E97478791E93E82400E3D514 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97478781E93E82400E3D514 /* HeaderView.swift */; };
 		E981EFE91E7584E20069F917 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981EFE81E7584E20069F917 /* AppDelegate.swift */; };
 		E981EFEB1E7584E20069F917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981EFEA1E7584E20069F917 /* ViewController.swift */; };
 		E981EFF01E7584E20069F917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E981EFEF1E7584E20069F917 /* Assets.xcassets */; };
@@ -42,6 +49,13 @@
 		1DA84467776AD77D61B34D7F /* Pods_UberEatsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberEatsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED72BB4E96DBFED27FDB12D /* Pods-UberEatsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEatsTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-UberEatsTest/Pods-UberEatsTest.release.xcconfig"; sourceTree = "<group>"; };
 		8E24CD130EB1D6A4E382B706 /* Pods-UberEatsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberEatsTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UberEatsTest/Pods-UberEatsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E94275C31E9902C100044A7A /* SavedMealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedMealCell.swift; sourceTree = "<group>"; };
+		E9737D4C1EAA44410025338D /* TypeFoodCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeFoodCell.swift; sourceTree = "<group>"; };
+		E9737D4E1EAA8B9C0025338D /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		E9737D501EAD42380025338D /* IntructionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntructionsCell.swift; sourceTree = "<group>"; };
+		E9737D521EAD45A70025338D /* StepperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
+		E97478761E93E54000E3D514 /* MealController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealController.swift; sourceTree = "<group>"; };
+		E97478781E93E82400E3D514 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E981EFE51E7584E20069F917 /* UberEatsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberEatsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E981EFE81E7584E20069F917 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E981EFEA1E7584E20069F917 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +173,9 @@
 				E988B7DC1E77FE9000F10FBA /* FabButton.swift */,
 				E982F35A1E8E41EE00A72A21 /* ProfileHeader.swift */,
 				E982F3511E8D331F00A72A21 /* ImageTextField.swift */,
+				E97478781E93E82400E3D514 /* HeaderView.swift */,
+				E9737D4E1EAA8B9C0025338D /* RadioButton.swift */,
+				E9737D521EAD45A70025338D /* StepperView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -192,6 +209,9 @@
 				E9D18A551E8FCA6C00B3AE56 /* PagingCell.swift */,
 				E9D18A571E911F1000B3AE56 /* OrderCell.swift */,
 				E9D18A591E91553700B3AE56 /* PreviousOrderCell.swift */,
+				E94275C31E9902C100044A7A /* SavedMealCell.swift */,
+				E9737D4C1EAA44410025338D /* TypeFoodCell.swift */,
+				E9737D501EAD42380025338D /* IntructionsCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -209,6 +229,7 @@
 			children = (
 				E981EFEA1E7584E20069F917 /* ViewController.swift */,
 				E981F0051E75B9D80069F917 /* DetailController.swift */,
+				E97478761E93E54000E3D514 /* MealController.swift */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -361,9 +382,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E982F3561E8D7F8100A72A21 /* CategoryCell.swift in Sources */,
+				E9737D531EAD45A70025338D /* StepperView.swift in Sources */,
+				E9737D4F1EAA8B9C0025338D /* RadioButton.swift in Sources */,
 				E9D18A561E8FCA6C00B3AE56 /* PagingCell.swift in Sources */,
 				E982F35B1E8E41EE00A72A21 /* ProfileHeader.swift in Sources */,
 				E981F0101E76BAF20069F917 /* Meal.swift in Sources */,
+				E94275C41E9902C100044A7A /* SavedMealCell.swift in Sources */,
 				E9A0CF261E8C420000B692D0 /* TabBarController.swift in Sources */,
 				E981EFFB1E75872C0069F917 /* RestaurentCell.swift in Sources */,
 				E982F3501E8D308600A72A21 /* SearchController.swift in Sources */,
@@ -376,6 +400,7 @@
 				E982F3541E8D7D8C00A72A21 /* Category.swift in Sources */,
 				E9D18A541E8FC6DF00B3AE56 /* PagingView.swift in Sources */,
 				E981F0121E7702700069F917 /* DetailTableHeader.swift in Sources */,
+				E9737D511EAD42380025338D /* IntructionsCell.swift in Sources */,
 				E981EFEB1E7584E20069F917 /* ViewController.swift in Sources */,
 				E981F00B1E76931C0069F917 /* Extensions.swift in Sources */,
 				E988B7DD1E77FE9000F10FBA /* FabButton.swift in Sources */,
@@ -383,9 +408,12 @@
 				E981F0081E76012E0069F917 /* DetailHeader.swift in Sources */,
 				E9D18A5A1E91553700B3AE56 /* PreviousOrderCell.swift in Sources */,
 				E9DDE18F1E8E47460044EA17 /* Settings.swift in Sources */,
+				E97478771E93E54000E3D514 /* MealController.swift in Sources */,
 				E9D18A521E8FC5A300B3AE56 /* BillingController.swift in Sources */,
 				E981F0061E75B9D80069F917 /* DetailController.swift in Sources */,
+				E9737D4D1EAA44410025338D /* TypeFoodCell.swift in Sources */,
 				E981EFFF1E7589E10069F917 /* NavigationBar.swift in Sources */,
+				E97478791E93E82400E3D514 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

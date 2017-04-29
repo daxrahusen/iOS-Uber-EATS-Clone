@@ -22,7 +22,7 @@ class OrderCell: UICollectionViewCell {
     let orderGradientView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        view.backgroundColor = UIColor.black.withAlphaComponent(0.2)
         return view
     }()
     
@@ -293,12 +293,7 @@ class OrderCell: UICollectionViewCell {
         
         primaryString.append(thirdString)
         
-        let range = NSRange()
-        
         primaryString.addAttribute(NSParagraphStyleAttributeName, value: paragraphStyle, range: .init(location: 0, length: primaryString.length))
-        
-        
-//        addAttribute(NSParagraphStyleAttributeName, value:paragraphStyle, range:NSMakeRange(0, attrString.length)
         
         return primaryString
     }
